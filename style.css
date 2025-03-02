@@ -497,3 +497,48 @@ footer{
       width: 100%;
   }
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.blogpost, .certificates {
+  flex: 1;
+  min-width: 350px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.blogpost:hover, .certificates:hover {
+  transform: translateY(-5px);
+}
+h2 {
+  color: #333;
+}
+.cert-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cert-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.cert-card:hover {
+  transform: scale(1.1);
+}
+.cert-card img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
